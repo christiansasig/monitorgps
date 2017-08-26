@@ -10,7 +10,7 @@ Caracteristicas:
 
   * Gestión de usuarios
 
-  * Gestión de didspositivos
+  * Gestión de dispositivos
 
   * Gestión de zonas seguras
 
