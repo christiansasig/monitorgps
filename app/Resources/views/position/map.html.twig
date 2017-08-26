@@ -1,0 +1,40 @@
+{% extends 'fragment/fragment_modal.html.twig' %}
+{% block title %}
+    <h3>Ubicación Actual</h3>
+{% endblock %}
+
+{% block body -%}
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <tbody>
+
+                <tr>
+                    <th>Latitud</th>
+                    <td>{{ position['latitude'] }}</td>
+                </tr>
+                <tr>
+                    <th>Longitud</th>
+                    <td>{{ position['longitude'] }}</td>
+                </tr>
+                 <tr>
+                    <th>{% trans %}DATE{% endtrans %}</th>
+                    <td>{{ "now"| date('Y-m-d H:i:s') }}</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <ng-map id="map"  style="width: 100%; min-height: 400px; position: block;" center="{{ position['latitude'] }},{{ position['longitude'] }}" zoom="12">
+            <marker 
+                    position="{{ position['latitude'] }},{{ position['longitude'] }}" 
+                    title="{{ position['latitude'] }}"
+                    animation="DROP"
+                    draggable="true"
+                    label="{{ position['latitude'] }}"
+                    >
+            </marker>
+        </ng-map>
+    </div>
+
+    {% include 'fragment/fragment_show.html.twig'%}
+{% endblock %}
+

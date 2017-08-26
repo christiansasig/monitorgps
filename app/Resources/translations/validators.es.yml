@@ -1,0 +1,9 @@
+## YAML Template.
+
+# validators.en.yml
+field.not_blank: Este valor no debe estar en blanco.
+field.name.not_blank: EL nombre ya se encuentra registrado.
+field.email.not_blank: EL email ya se encuentra registrado.
+field.code.not_blank: EL código ya se encuentra registrado.
+field.mac.not_blank: La MAC ya se encuentra registrada.
+field.ip.not_blank: La IP ya se encuentra registrada.

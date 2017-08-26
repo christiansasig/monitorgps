@@ -1,0 +1,74 @@
+{% extends 'base_notification.html.twig' %}
+{% block title %}
+Detalle de la alerta
+{% endblock %}
+
+{% block javascripts %}
+
+    <script>
+        var app = angular
+                .module('MapBundleApp', [
+                    'ngMap'
+                ]);
+        app.config(function ($interpolateProvider) {
+            $interpolateProvider.startSymbol('[[');
+            $interpolateProvider.endSymbol(']]');
+        });
+        app.controller('MapController', function ($scope, NgMap) {
+            
+            NgMap.getMap("map").then(function (map) {
+                google.maps.event.trigger(map, 'resize');
+            }).catch(function (error) {
+                console.log(error);
+            });
+
+        });
+    </script>
+
+{% endblock %}
+
+{% block body -%}
+    <div class="table-responsive" ng-app="MapBundleApp" ng-controller="MapController">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ entity.id }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}TAG{% endtrans %}</th>
+                    <td>{{ entity.tag }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}DESCRIPTION{% endtrans %}</th>
+                    <td>{{ entity.description }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}POLYGON{% endtrans %}</th>
+                    <td>{{ entity.namePolygon }}</td>
+                </tr>
+
+                <tr>
+                    <th>{% trans %}DEVICE{% endtrans %}</th>
+                    <td>{{ entity.device.name }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}CREATE_AT{% endtrans %}</th>
+                    <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                </tr>
+            </tbody>
+        </table>
+        <ng-map id="map"  center="{{ entity.latitude }},{{ entity.longitude }}" zoom="13">
+            <shape name="polygon" 
+                   paths="{{ entity.pathShape }}"
+                   stroke-color="#FF0000"
+                   stroke-opacity="0.8"
+                   stroke-weight="2"
+                   fill-color="#FF0000"
+                   fill-opacity="0.35">
+            </shape>
+            <marker position="{{ entity.latitude }},{{ entity.longitude }}"  label="{{ entity.device.name }}" title="{{ entity.device.name }}"></marker>
+        </ng-map>
+    </div>
+
+{% endblock %}

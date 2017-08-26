@@ -1,0 +1,87 @@
+{% extends 'fragment/fragment_modal.html.twig' %}
+{% block title %}
+    <h3>Datos</h3>
+{% endblock %}
+
+{% block body -%}
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ entity.id }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}NAME{% endtrans %}</th>
+                    <td>{{ entity.name }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}DNI{% endtrans %}</th>
+                    <td>{{ entity.dni }}</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>{{ entity.email }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}PHONE{% endtrans %}</th>
+                    <td>{{ entity.phone }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}MOBILE{% endtrans %}</th>
+                    <td>{{ entity.mobile }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}ADDRESS{% endtrans %}</th>
+                    <td>{{ entity.address }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}USERNAME{% endtrans %}</th>
+                    <td>{{ entity.username }}</td>
+                </tr>
+  
+               <tr>
+                    <th>{% trans %}STATUS{% endtrans %}</th>
+                    <td>
+                        {% if entity.status %}
+                            <span class="label label-success">{% trans %}ENABLED{% endtrans %}</span>
+                        {% else %}
+                            <span class="label label-default">{% trans %}DISABLED{% endtrans %}</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                 <tr>
+                    <th>{% trans %}CREATE_AT{% endtrans %}</th>
+                    <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                </tr>
+                 <tr>
+                    <th>{% trans %}ROLE_TITLE{% endtrans %}</th>
+                    <td>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>{% trans %}NAME{% endtrans %}</th>
+                                    <th>{% trans %}TAG{% endtrans %}</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for role in entity.role %}
+                                    <tr >
+                                        <td>{{ role.id }}</td>
+                                        <td>{{ role.name }}</td>
+                                        <td>{{ role.tag }}</td>
+                                    </tr>
+                                {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr> 
+            </tbody>
+        </table>
+    </div>
+
+    {% include 'fragment/fragment_show.html.twig'%}
+{% endblock %}

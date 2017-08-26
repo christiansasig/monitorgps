@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="Christian Sasig">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <title>{% block title %}Login{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+
+    <link rel="stylesheet" href="{{ asset('bundles/app/libs/jquery/bootstrap/dist/css/bootstrap.min.css') }}" type="text/css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ asset('bundles/app/libs/assets/font-awesome/css/font-awesome.min.css') }}" type="text/css" />
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="{{ asset('bundles/app/libs/ionicons/ionicons.min.css') }}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ asset('bundles/app/html/adminlte/dist/css/AdminLTE.min.css') }}">
+    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect.
+    -->
+    <link rel="stylesheet" href="{{ asset('bundles/app/html/adminlte/dist/css/skins/skin-blue.min.css') }}">
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2VklEnaHMgE5YW-nKgu4-MwmpzChOuoY&libraries=drawing"
+            type="text/javascript">
+    </script>
+    <link rel="stylesheet" href="{{ asset('bundles/app/libs/angular/ngmap/custom-marker.css') }}" type="text/css" />
+
+
+
+</head>
+<body class="hold-transition login-page">
+
+    {% block body %}
+    {% endblock %}
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{{ asset('bundles/app/libs/jquery/jquery/dist/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/app/libs/jquery/bootstrap/dist/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('bundles/app/libs/angular/angular.min.js') }}"></script>
+    <script src="{{ asset('bundles/app/libs/angular/ngmap/ng-map.min.js') }}"></script>
+    <script src="{{ asset('bundles/app/libs/angular/ngmap/markerclusterer.js') }}"></script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

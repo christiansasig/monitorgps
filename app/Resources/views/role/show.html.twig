@@ -1,0 +1,42 @@
+{% extends 'fragment/fragment_modal.html.twig' %}
+{% block title %}
+    <h3>{% trans %}ROLE_SHOW_SUBTITLE{% endtrans %}</h3>
+{% endblock %}
+
+{% block body -%}
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ entity.id }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}NAME{% endtrans %}</th>
+                    <td>{{ entity.name }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}TAG{% endtrans %}</th>
+                    <td>{{ entity.tag }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}DESCRIPTION{% endtrans %}</th>
+                    <td>{{ entity.description }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}STATUS{% endtrans %}</th>
+                    <td>
+                        {% if entity.status %}
+                            <span class="label label-success">{% trans %}ENABLED{% endtrans %}</span>
+                        {% else %}
+                            <span class="label label-default">{% trans %}DISABLED{% endtrans %}</span>
+                        {% endif %}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    {% include 'fragment/fragment_show.html.twig'%}
+{% endblock %}

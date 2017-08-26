@@ -1,0 +1,51 @@
+{% extends 'fragment/fragment_modal.html.twig' %}
+{% block title %}
+    <h3>Detalle de la alerta</h3>
+{% endblock %}
+
+{% block body -%}
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ entity.id }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}TAG{% endtrans %}</th>
+                    <td>{{ entity.tag }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}DESCRIPTION{% endtrans %}</th>
+                    <td>{{ entity.description }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}POLYGON{% endtrans %}</th>
+                    <td>{{ entity.namePolygon }}</td>
+                </tr>
+
+                <tr>
+                    <th>{% trans %}DEVICE{% endtrans %}</th>
+                    <td>{{ entity.device.name }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}CREATE_AT{% endtrans %}</th>
+                    <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                </tr>
+            </tbody>
+        </table>
+        <ng-map id="map"  style="width: 100%; min-height: 400px; position: block;" center="-2.901895761873221,-79.01779174804688" zoom="13">
+            <shape name="polygon" 
+                   paths="{{ entity.pathShape }}"
+                   stroke-color="#FF0000"
+                   stroke-opacity="0.8"
+                   stroke-weight="2"
+                   fill-color="#FF0000"
+                   fill-opacity="0.35">
+            </shape>
+            <marker position="{{ entity.latitude }},{{ entity.longitude }}"  title="Hello World!"></marker>
+        </ng-map>
+    </div>
+
+    {% include 'fragment/fragment_show.html.twig'%}
+{% endblock %}

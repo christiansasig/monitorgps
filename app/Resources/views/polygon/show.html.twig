@@ -1,0 +1,51 @@
+{% extends 'fragment/fragment_modal.html.twig' %}
+{% block title %}
+    <h3>Datos</h3>
+{% endblock %}
+
+{% block body -%}
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ entity.id }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}NAME{% endtrans %}</th>
+                    <td>{{ entity.name }}</td>
+                </tr>
+
+                <tr>
+                    <th>{% trans %}PATH{% endtrans %}</th>
+                    <td>{{ entity.path }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}STATUS{% endtrans %}</th>
+                    <td>
+                        {% if entity.status %}
+                            <span class="label label-success">{% trans %}ENABLED{% endtrans %}</span>
+                        {% else %}
+                            <span class="label label-default">{% trans %}DISABLED{% endtrans %}</span>
+                        {% endif %}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ng-map id="map"  style="width: 100%; min-height: 400px; position: block;" center="-2.901895761873221,-79.01779174804688" zoom="13" on-click="getpos($event)">
+            <shape name="polygon" 
+                   paths="{{ entity.pathShape }}"
+                   stroke-color="#FF0000"
+                   stroke-opacity="0.8"
+                   stroke-weight="2"
+                   fill-color="#FF0000"
+                   fill-opacity="0.35">
+            </shape>
+            <!--<marker position="[[latlng]]" title="Hello World!" on-dragend="getpos($event)" 
+                     draggable="true"></marker>-->
+        </ng-map>
+        <!--[[latlng]]-->
+    </div>
+
+    {% include 'fragment/fragment_show.html.twig'%}
+{% endblock %}

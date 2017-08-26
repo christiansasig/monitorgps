@@ -1,0 +1,192 @@
+#
+# Default Messages
+#
+PUBLISH:  Publicar
+UNPUBLISH:  Despublicar
+PUBLISHED:  Publicado
+UNPUBLISHED:  Despublicado
+EDIT: Editar
+DELETE: Eliminar
+NEW:  Nuevo
+PRINT: Imprimir
+CLOSE:  Cerrar
+SAVE: Guardar
+CANCEL: Cancelar
+CANCELED: Anulado
+ORDER:  Ordenar
+ADD:  Agregar
+FIND: Buscar
+VIEW_ALL: Ver todo
+VIEW: Ver
+SAVE_CLOSE: Guardar & Cerrar
+SAVE_NEW: Guardar & Nuevo
+BACK_LIST: Regresar a la lista
+SHOW: Mostrar
+ACCEPT: Aceptar
+REQUIRED: Campos requerios.
+HELP: Ayuda
+BEGIN: Iniciar
+END: Fin
+BACK: Regresar
+NEXT: Siguiente
+PAGE: Página
+TOTAL: Total
+RESET: Limpiar
+FILTER: Filtro
+YES: Si
+NO: No
+PRINT: Imprimir
+PENDING: Pendiente
+EXECUTED: Ejecutada
+DATE: Fecha
+ENABLED: Habilitado
+DISABLED: Deshabilitado
+CONFIRMATION: Confirmación
+WARNING: Advertencia
+ERROR: Error
+ACTIONS: Acciones
+SELECTED: Seleccione...
+DATE: Fecha
+DESCRIPTION: Descripción
+STATUS: Estado
+STATUS_PAYMENT: Cancelado
+STATUS_UNPAYMENT: Pendiente de pago
+NAME: Nombre
+USERNAME: Nombre de usuario
+PASSWORD: Contraseña
+EMAIL: Email
+ROL: Rol
+CONTROL_PANEL: Panel de control
+MANDATORY_FIELS: /*/ mandatory fields
+DATE_START: Fecha de inicio
+DATE_END: Fecha de fin
+FILTER: Filtro
+PDF: pdf
+TAG: Etiqueta
+DASHBOARD: Panel de control
+NO_FOUND_ENTITIES: No existen registros
+Previous: Anterior
+Next: Siguiente
+ROWS: filas
+PHONE: Teléfono
+LAST_NAME: Apellidos
+ADDRESS: Dirección
+MOBILE: Móvil
+CITY: Ciudad
+URL: Sitio web
+IMAGE: Imagen
+HELP_URL: (http://www.company.com)
+HELP_EMAIL: (user@company.com)
+LATITUDE: Latitud
+LONGITUDE: Longitud
+ACCURACY: Presición
+PROVIDER: Proveedor de geolocalización
+VALIDATION: Validación
+#
+# Installer Head Labels: LHL
+#
+INSTALATION: Instalación
+CONFIGURE_DATABASE: Configure su base de datos
+CONFIGURE_DATABASE_MESSAGE: Su sitio web necesita una coneccion a una base de datos, por favor configure aqui.
+DRIVER: Controlador
+HOST: Host
+DATABASE: Nombre de la base de datos
+PATH: Ruta
+PORT: Puerto
+NEXT_STEP: Siguiente paso
+STEP: Paso
+
+
+
+#
+# Aplicacion  Labels
+#
+APPLICATION:    Aplicación
+APPLICATION_TITLE:    Aplicaciones
+APPLICATION_NEW_SUBTITLE:    Nueva Aplicación
+APPLICATION_EDIT_SUBTITLE:    Editar Aplicación
+APPLICATION_SHOW_SUBTITLE:    Detalle de la Aplicación
+
+#
+# Plan  Labels
+#
+CATEGORIA:    Categoria
+CATEGORIA_TITLE:    Categorias
+CATEGORIA_NEW_SUBTITLE:    Nueva Categoria
+CATEGORIA_EDIT_SUBTITLE:    Editar Categoria
+CATEGORIA_SHOW_SUBTITLE:    Detalle del Categoria
+
+#
+# Provincia  Labels
+#
+PROVINCIA:    Provincia
+PROVINCIA_TITLE:    Provincias
+PROVINCIA_NEW_SUBTITLE:    Nueva Provincia
+PROVINCIA_EDIT_SUBTITLE:    Editar Provincia
+PROVINCIA_SHOW_SUBTITLE:    Detalle de la Provincia
+
+#
+# Canton  Labels
+#
+CANTON:    Cantón
+CANTON_TITLE:    Cantones
+CANTON_NEW_SUBTITLE:    Nuevo Cantón
+CANTON_EDIT_SUBTITLE:    Editar Cantón
+CANTON_SHOW_SUBTITLE:    Detalle del Cantón
+
+#
+# Canton  Labels
+#
+SITIO:    Sitio
+SITIO_TITLE:    Sitios
+SITIO_NEW_SUBTITLE:    Nuevo Sitio
+SITIO_EDIT_SUBTITLE:    Editar Sitio
+SITIO_SHOW_SUBTITLE:    Detalle del Sitio
+
+#
+# ROL Labels
+#
+ROL_TITLE:    Roles
+ROL_NEW_SUBTITLE: Nuevo Rol
+ROL_EDIT_SUBTITLE: Editar Rol
+ROL_SHOW_SUBTITLE: Detalle del Rol
+
+
+#
+# Paises Labels
+#
+COUNTRY: Pais
+COUNTRY_TITLE:    Paises
+COUNTRY_NEW_SUBTITLE: Nueva Pais
+COUNTRY_EDIT_SUBTITLE: Editar Pais
+COUNTRY_SHOW_SUBTITLE: Detalle del Pais
+
+#
+# User Labels
+#
+USER_TITLE:    Usuarios
+USER_NEW_SUBTITLE: Nuevo Usuario
+USER_EDIT_SUBTITLE: Editar Usuario
+USER_SHOW_SUBTITLE: Detalle del Usuario
+
+
+
+
+#
+# Alerts Plan: AP
+#
+GENERIC_ERROR: Se ha producido un error. Por favor inténtelo más tarde.
+SAVE_SUCCESS: Registro guardado exitosamente.
+UPDATE_SUCCESS: Registro actualizado exitosamente.
+DELETE_SUCCESS: Registro eliminado exitosamente.
+
+
+CLIENT_PLAN_NO_SELECTED_CLIENT: Seleccione el cliente
+CLIENT_PLAN_NO_SELECTED_PLAN: Seleccione el plan
+
+PAYMENT_SAVE_SUCCESS: El pago se ha sido guardado exitosamente.
+
+#
+# Check Messages: CM
+#
+DELETE_CONFIRMATION: ¿Está seguro que desea eliminar?

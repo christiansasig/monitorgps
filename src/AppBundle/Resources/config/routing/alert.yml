@@ -1,0 +1,41 @@
+alert_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Alert:index" }
+    methods:  GET
+    options:
+        expose: true
+
+alert_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:Alert:show" }
+    methods:  GET
+    options:
+        expose: true
+
+alert_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:Alert:new" }
+    methods:  [GET, POST]
+    options:
+        expose: true
+
+alert_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:Alert:edit" }
+    methods:  [GET, POST]
+    options:
+        expose: true
+
+alert_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:Alert:delete" }
+    methods:  DELETE
+    options:
+        expose: true
+
+alert_find_all:
+    path:     /findAll
+    defaults: { _controller: "AppBundle:Alert:findAll" }
+    methods:  GET
+    options:
+        expose: true

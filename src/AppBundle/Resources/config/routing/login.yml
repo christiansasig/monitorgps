@@ -1,0 +1,14 @@
+login:
+    path:   /login
+    defaults:  { _controller: AppBundle:Security:login }
+
+login_check:
+    path:   /login_check
+
+denied:
+    path:   /denied
+    defaults:  { _controller: AppBundle:Security:denied }
+    
+logout:
+    path:  /logout
+   

@@ -1,0 +1,65 @@
+{% extends 'fragment/fragment_modal.html.twig' %}
+
+{% block title %}
+    <h4>{% trans %}NEW{% endtrans %}</h4>
+{% endblock %}
+
+{% block body %}
+    <form id="adminForm" class="form-horizontal"  role="form" name="adminForm" ng-submit="processForm()">
+        <input name="appbundle_polygon[path]" id="path" type="hidden" ng-model="source.path">
+        <div class="form-group">
+            <div class="input-error">
+                {{  form_errors(form.name) }}
+            </div>
+            {{ form_label(form.name, 'NAME' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                <div class="input-group">
+                    <span class="input-group-addon">*</span>
+                    {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+                </div>
+            </div>
+        </div>   
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-2"> <label>Dispositivos</label></div>
+                <div class="col-md-6">
+                    <select class="form-control" ng-model="source.deviceSelected" ng-options="entity.name for entity in devices track by entity.id">
+                        <option value="">Seleccione ...</option>    
+                    </select>
+                </div>
+                <div class="col-md-4">
+                <button type="button" ng-click="searchPosition()" class="btn btn-default">Buscar ubicación</button>
+                </div>
+            </div>
+        </div>
+
+        <ng-map id="map_polygon"  style="width: 100%; min-height: 400px; position: block;" center="[-2.901895761873221,-79.01779174804688]" zoom="12">
+            <drawing-manager
+                on-overlaycomplete="onMapOverlayCompleted()"
+                drawing-control-options="{position: 'TOP_CENTER',drawingModes:['polygon']}"
+                drawingControl="true"
+                drawingMode="POLYGON"
+                polygonOptions="{editable: true}"
+                rectangleOptions="{fillColor:'red'}"
+                circleOptions="{fillColor: '#FFFF00',fillOpacity: 1,strokeWeight: 5,clickable: false,zIndex: 1,editable: true}" >
+            </drawing-manager>
+        </ng-map>
+    
+
+        <div class="form-group">
+            {{ form_errors(form.status) }}
+            {{ form_label(form.status, 'STATUS' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                {{ form_widget(form.status, {'attr': {'checked': 'true'}}) }}
+            </div>
+        </div>
+
+        {{ form_errors(form._token) }}
+        {{ form_widget(form._token) }}
+
+        {% include 'fragment/fragment_new.html.twig'%}
+    </form>
+
+{% endblock %}
+

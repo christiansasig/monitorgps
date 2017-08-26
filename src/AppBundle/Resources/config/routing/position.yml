@@ -1,0 +1,42 @@
+position_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Position:index" }
+    methods:  GET
+    options:
+        expose: true
+
+position_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:Position:show" }
+    methods:  GET
+    options:
+        expose: true
+
+position_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:Position:new" }
+    methods:  [GET, POST]
+    options:
+        expose: true
+
+position_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:Position:edit" }
+    methods:  [GET, POST]
+    options:
+        expose: true
+
+position_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:Position:delete" }
+    methods:  DELETE
+    options:
+        expose: true
+    
+position_find_all:
+    path:     /findAll
+    defaults: { _controller: "AppBundle:Position:findAll" }
+    methods:  GET
+    options:
+        expose: true
+ 

@@ -1,0 +1,34 @@
+users_authentication:
+    path:     /user/authentication
+    defaults: { _controller: "AppBundle:Users:authentication" }
+    methods:  POST
+    options:
+        expose: true 
+
+test:
+    path:     /user/test
+    defaults: { _controller: "AppBundle:Users:test" }
+    methods:  GET
+    options:
+        expose: true
+  
+position_current:
+    path:     /position/positionByDevice
+    defaults: { _controller: "AppBundle:Position:positionByDevice" }
+    methods:  POST
+    options:
+        expose: true
+
+alert_show_notification:
+    path:     /alert/{id}/showNotification
+    defaults: { _controller: "AppBundle:Alert:showNotification" }
+    methods:  GET
+    options:
+        expose: true
+
+position_historial_device:
+    path:     /position/historialPositionByDevice
+    defaults: { _controller: "AppBundle:Position:retriveByDevice" }
+    methods:  POST
+    options:
+        expose: true

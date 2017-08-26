@@ -1,0 +1,9 @@
+
+ {% if (is_granted('ROLE_ADMIN') or is_granted('ROLE_SUPERADMIN'))%}
+<button class="btn btn-info" ng-click="addEntity()"><i class="fa fa-plus"></i> {% trans %}NEW{% endtrans %}</button>
+<button class="btn btn-default" ng-disabled="checked" ng-click="editEntity()"><i class="fa fa-edit"></i> {% trans %}EDIT{% endtrans %}</button>
+ {% endif %}
+<button class="btn btn-default" ng-disabled="checked" ng-click="showEntity()"><i class="fa fa-info"></i> {% trans %}SHOW{% endtrans %}</button>
+ {% if (is_granted('ROLE_ADMIN') or is_granted('ROLE_SUPERADMIN'))%}
+<button class="btn btn-default" ng-disabled="checked" ng-click="deleteEntity()"><i class="fa fa-remove"></i> {% trans %}DELETE{% endtrans %}</button>
+ {% endif %}

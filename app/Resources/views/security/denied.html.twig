@@ -1,0 +1,21 @@
+{% extends 'base_login.html.twig' %}
+
+{% block title %}Ocurrió un Error: Acceso Denegado{% endblock %}
+{% block body -%}
+
+    <div class="amber-200 bg-big">
+        <div class="text-center">
+            <h1 class="text-shadow no-margin text-white text-4x p-v-lg">
+                <span class="text-2x font-bold m-t-lg block">Acceso denegado</span>
+            </h1>
+            <h2 class="h1 m-v-lg text-black">OOPS!</h2>
+            <p class="h4 m-v-lg text-u-c font-bold text-black">Lo sentimos. No tiene permisos para acceder a esta pagina</p>
+            <div class="p-v-lg">
+                <a ui-sref="app.dashboard" md-ink-ripple class="md-btn indigo md-raised p-h-lg">
+                    <span class="text-white">Ir a la pagina principal</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

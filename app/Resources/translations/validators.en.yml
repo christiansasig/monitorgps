@@ -1,0 +1,5 @@
+## YAML Template.
+
+# validators.en.yml
+field.not_blank: This value should not be blank.
+field.name.not_blank: This value is already used.

@@ -1,0 +1,67 @@
+{% extends 'fragment/fragment_modal.html.twig' %}
+{% block title %}
+    <h3>Datos</h3>
+{% endblock %}
+
+{% block body -%}
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th>Id</th>
+                    <td>{{ entity.id }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}NAME{% endtrans %}</th>
+                    <td>{{ entity.name }}</td>
+                </tr>
+                <tr>
+                    <th>Ip</th>
+                    <td>{{ entity.ip }}</td>
+                </tr>
+                <tr>
+                    <th>Mac</th>
+                    <td>{{ entity.mac }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}POLYGON{% endtrans %}</th>
+                    {% if entity.polygon %}
+                    <td>{{ entity.polygon.name }}</td>
+                    {% else %}
+                        <td> No tiene Zona Segura asignada</td>
+                    {% endif %}
+                </tr>
+
+                <tr>
+                    <th>{% trans %}USER{% endtrans %}</th>
+                        {% if entity.user %}
+                        <td>{{ entity.user.name }}</td>
+                    {% else %}
+                        <td> No tiene usuario asignado</td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    <th>{% trans %}DESCRIPTION{% endtrans %}</th>
+                    <td>{{ entity.description }}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}CREATE_AT{% endtrans %}</th>
+                    <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                </tr>
+                <tr>
+                    <th>{% trans %}STATUS{% endtrans %}</th>
+                    <td>
+                        {% if entity.status %}
+                            <span class="label label-success">{% trans %}ENABLED{% endtrans %}</span>
+                        {% else %}
+                            <span class="label label-default">{% trans %}DISABLED{% endtrans %}</span>
+                        {% endif %}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    {% include 'fragment/fragment_show.html.twig'%}
+{% endblock %}

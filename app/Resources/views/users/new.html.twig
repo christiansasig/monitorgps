@@ -1,0 +1,157 @@
+{% extends 'fragment/fragment_modal.html.twig' %}
+
+{% block title %}
+    <h4>{% trans %}USER_NEW_SUBTITLE{% endtrans %}</h4>
+{% endblock %}
+
+{% block body %}
+    <form id="adminForm" class="form-horizontal" role="form" name="adminForm" ng-submit="processForm()">
+
+        <div class="form-group">
+            <div class="input-error">
+                {{  form_errors(form.name) }}
+            </div>
+            {{ form_label(form.name, 'NAME' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                <div class="input-group">
+                    <span class="input-group-addon">*</span>
+                    {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-error">
+                {{  form_errors(form.dni) }}
+            </div>
+            {{ form_label(form.dni, 'DNI' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                <div class="input-group">
+                    <span class="input-group-addon">*</span>
+                    {{ form_widget(form.dni, {'attr': {'class': 'form-control'}}) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-error">
+                {{  form_errors(form.username) }}
+            </div>
+            {{ form_label(form.username, 'USERNAME' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    {{ form_widget(form.username, {'attr': {'class': 'form-control'}}) }}
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-error">
+                {{  form_errors(form.plainPassword) }}
+            </div>
+            {{ form_label(form.plainPassword, 'PASSWORD' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    {{ form_widget(form.plainPassword, {'attr': {'class': 'form-control', 'ng-model': 'plainPassword', 'ng-minlength': '6', 'ng-maxlength': '64'}}) }}
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="input-error">
+                {{  form_errors(form.email) }}
+            </div>
+            {{ form_label(form.email, 'EMAIL' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="input-error">
+                {{  form_errors(form.address) }}
+            </div>
+            {{ form_label(form.address, 'ADDRESS' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                {{ form_widget(form.address, {'attr': {'class': 'form-control',  'rows':'3'}}) }}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="panel-body">
+                <div class="col-sm-6 m-b">
+                    <div class="input-error">
+                        {{  form_errors(form.phone) }}
+                    </div>
+                    {{ form_label(form.phone, 'PHONE' | trans) }}
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-earphone"> </span>
+                        </span>
+                        {{ form_widget(form.phone, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+                <div class="col-sm-6 m-b">
+                    <div class="input-error">
+                        {{  form_errors(form.mobile) }}
+                    </div>
+                    {{ form_label(form.mobile, 'MOBILE' | trans) }}
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-phone"> </span>
+                        </span>
+                        {{ form_widget(form.mobile, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            {{ form_errors(form.status) }}
+            {{ form_label(form.status, 'STATUS' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                {{ form_widget(form.status, {'attr': {'checked': 'true'}}) }}
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="input-error">
+                {{ form_errors(form.role) }}
+            </div>
+            {{ form_label(form.role, 'ROLE_TITLE' | trans, {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+            <div class="col-sm-10">
+                {{ form_widget(form.role, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+
+        {#<div class="row">
+            <div class="col-sm-6 m-b">
+                <div class="input-error">
+                    {{  form_errors(form.password) }}
+                </div>
+                {{ form_label(form.password, 'PASSWORD' | trans) }}
+                {{ form_widget(form.password, {'attr': {'class': 'form-control', 'ng-model': 'password'}}) }}
+            </div>
+            <div class="col-sm-6 m-b">
+                <label>Confirmar contraseña</label>
+                <input type="password" class="form-control" name="confirm_password" required ng-model="confirm_password" ui-validate=" '$value==password' " ui-validate-watch=" 'password' ">
+                <span ng-show='adminForm.confirm_password.$error.validator'>Contraseñas no coinciden !</span>
+            </div>
+        </div>#}
+
+
+        {{ form_errors(form._token) }}
+        {{ form_widget(form._token) }}
+
+        {% include 'fragment/fragment_new.html.twig'%}
+    </form>
+
+{% endblock %}

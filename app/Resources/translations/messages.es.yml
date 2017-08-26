@@ -1,0 +1,384 @@
+#
+# Default Messages
+#
+PUBLISH:  Publicar
+UNPUBLISH:  Despublicar
+PUBLISHED:  Publicado
+UNPUBLISHED:  Despublicado
+EDIT: Editar
+DELETE: Eliminar
+NEW:  Nuevo
+PRINT: Imprimir
+CLOSE:  Cerrar
+SAVE: Guardar
+CANCEL: Cancelar
+CANCELED: Anulado
+ORDER:  Ordenar
+ADD:  Agregar
+FIND: Buscar
+VIEW_ALL: Ver todo
+VIEW: Ver
+SAVE_CLOSE: Guardar & Cerrar
+SAVE_NEW: Guardar & Nuevo
+BACK_LIST: Regresar a la lista
+SHOW: Mostrar
+ACCEPT: Aceptar
+REQUIRED: Campos requerios.
+HELP: Ayuda
+BEGIN: Iniciar
+END: Fin
+BACK: Regresar
+NEXT: Siguiente
+PAGE: Página
+TOTAL: Total
+RESET: Limpiar
+FILTER: Filtro
+YES: Si
+NO: No
+PENDING: Pendiente
+EXECUTED: Ejecutada
+ENABLED: Habilitado
+DISABLED: Deshabilitado
+CONFIRMATION: Confirmación
+WARNING: Advertencia
+ERROR: Error
+ACTIONS: Acciones
+SELECTED: Seleccione...
+SELECT: Seleccione...
+DATE: Fecha
+DESCRIPTION: Descripción
+STATUS: Estado
+STATUS_PAYMENT: Cancelado
+STATUS_UNPAYMENT: Pendiente de pago
+NAME: Nombre
+USERNAME: Nombre de usuario
+PASSWORD: Contraseña
+EMAIL: Email
+ROL: Rol
+CONTROL_PANEL: Panel de control
+MANDATORY_FIELS: /*/ mandatory fields
+DATE_START: Fecha de inicio
+DATE_END: Fecha de fin
+PDF: pdf
+TAG: Etiqueta
+DASHBOARD: Panel de control
+NO_FOUND_ENTITIES: No existen registros
+Previous: Anterior
+Next: Siguiente
+ROWS: filas
+PHONE: Teléfono
+LAST_NAME: Apellidos
+ADDRESS: Dirección
+MOBILE: Móvil
+CITY: Ciudad
+URL: Sitio web
+IMAGE: Imagen
+HELP_URL: (http://www.company.com)
+HELP_EMAIL: (user@company.com)
+LATITUDE: Latitud
+LONGITUDE: Longitud
+ACCURACY: Presición
+PROVIDER_GEOLOCATION: Proveedor de geolocalización
+VALIDATION: Validación
+VERSION: Versión
+MNEMONIC: Nemónico
+POSITION: Posición
+IS_FINAL_NODE: Es nodo final
+ENVIRONMENT: Ambiente
+DNI: Cédula
+CREATE_AT: Fecha de creación
+ICON: Icono
+MAC_ADDRESS: Dirección MAC
+BARCODE: Código de barras
+CODE: Código
+IS_ASSIGNED: ¿Está asignado?
+CREATED_AT: Fecha de creación
+IS_USER_MANAGER: ¿Administra usuarios?
+MODE: Modo
+IP_ADDRESS: IP
+MASK: Máscara
+PANEL_LINK: Datos del enlace
+TYPE: Tipo
+MODE_AUTHENTICATION: Modo de autenticación
+PORT_API: Puerto del API
+IP_ADDRESS_START: Rango de IPs Inicial
+IP_ADDRESS_END: Rango de IPs Final
+USER_PPPOE: Usuario PPPOE
+PASSWORD_PPPOE: Contraseña PPPOE 
+COST: Precio
+SPEED: Velocidad
+DOWNLOAD_SPEED: Velocidad de descarga
+UPLOAD_SPEED: Velocidad de subida
+LIMIT_SPEED: Límite de velocidad
+LIMIT_DOWNLOAD_SPEED: Límite de velocidad de descarga
+LIMIT_UPLOAD_SPEED: Límite de velocidad de subida
+PRIORITY: Prioridad
+PRIORITY_DOWNLOAD: Prioridad de descarga
+PRIORITY_UPLOAD: Prioridad de subida
+QUEUE_TYPE: Tipo de cola
+QUEUE_TYPE_DOWNLOAD: Tipo de cola de descarga
+QUEUE_TYPE_UPLOAD: Tipo de cola de subida
+BURST_LIMIT: Límite de ráfaga
+BURST_LIMIT_DOWNLOAD: Límite de ráfaga de descarga
+BURST_LIMIT_UPLOAD: Límite de ráfaga de subida
+BURST_THRESHOLD: Umbral de ráfaga
+BURST_THRESHOLD_DOWNLOAD: Umbral de ráfaga de descarga
+BURST_THRESHOLD_UPLOAD: Umbral de ráfaga de subida
+BURST_TIME: Tiempo de ráfaga
+BURST_TIME_DOWNLOAD: Tiempo de ráfaga de descarga
+BURST_TIME_UPLOAD: Tiempo de ráfaga de subida
+POLYGON: Zona segura
+ 
+#
+# Installer Head Labels: LHL
+#
+INSTALATION: Instalación
+CONFIGURE_DATABASE: Configure su base de datos
+CONFIGURE_DATABASE_MESSAGE: Su sitio web necesita una coneccion a una base de datos, por favor configure aqui.
+DRIVER: Controlador
+HOST: Host
+DATABASE: Nombre de la base de datos
+PATH: Ruta
+PORT: Puerto
+NEXT_STEP: Siguiente paso
+STEP: Paso
+
+
+
+#
+# Aplicacion  Labels
+#
+APPLICATION:    Aplicación
+APPLICATION_TITLE:    Aplicaciones
+APPLICATION_NEW_SUBTITLE:    Nueva Aplicación
+APPLICATION_EDIT_SUBTITLE:    Editar Aplicación
+APPLICATION_SHOW_SUBTITLE:    Detalle de la Aplicación
+
+
+#
+# Menu  Labels
+#
+MENU:    Menu
+MENU_TITLE:    Menus
+MENU_NEW_SUBTITLE:    Nuevo Menu
+MENU_EDIT_SUBTITLE:    Editar Menu
+MENU_SHOW_SUBTITLE:    Detalle del Menu
+
+#
+# Rol  Labels
+#
+ROLE:    Rol
+ROLE_TITLE:    Roles
+ROLE_NEW_SUBTITLE:    Nuevo Rol
+ROLE_EDIT_SUBTITLE:    Editar Rol
+ROLE_SHOW_SUBTITLE:    Detalle del Rol
+
+#
+# Grupo  Labels
+#
+GROUP:    Grupo
+GROUP_TITLE:    Grupos
+GROUP_NEW_SUBTITLE:    Nuevo Grupo
+GROUP_EDIT_SUBTITLE:    Editar Grupo
+GROUP_SHOW_SUBTITLE:    Detalle del Grupo
+
+#
+# Institucion  Labels
+#
+INSTITUTION:    Institución
+INSTITUTION_TITLE:    Instituciones
+INSTITUTION_NEW_SUBTITLE:    Nueva Institución
+INSTITUTION_EDIT_SUBTITLE:    Editar Institución
+INSTITUTION_SHOW_SUBTITLE:    Detalle de la Institución
+
+#
+# Departamento  Labels
+#
+DEPARTMENT:    Departamento
+DEPARTMENT_TITLE:    Departamentos
+DEPARTMENT_NEW_SUBTITLE:    Nuevo Departamento
+DEPARTMENT_EDIT_SUBTITLE:    Editar Departamento
+DEPARTMENT_SHOW_SUBTITLE:    Detalle del Departamento
+
+#
+# Documento de Identificación  Labels
+#
+DOCUMENT_IDENTIFICATION:    Documento de Identificación
+DOCUMENT_IDENTIFICATION_TITLE:    Departamentos de Identificación
+DOCUMENT_IDENTIFICATION_NEW_SUBTITLE:    Nuevo Documento de Identificación
+DOCUMENT_IDENTIFICATION_EDIT_SUBTITLE:    Editar Documento de Identificación
+DOCUMENT_IDENTIFICATION_SHOW_SUBTITLE:    Detalle del Documento de Identificación
+
+#
+# WISP  Labels
+#
+
+#
+# Provider  Labels
+#
+PROVIDER:    Proveedor
+PROVIDER_TITLE:    Proveedores
+PROVIDER_NEW_SUBTITLE:    Nuevo Proveedor
+PROVIDER_EDIT_SUBTITLE:    Editar Proveedor
+PROVIDER_SHOW_SUBTITLE:    Detalle del Proveedor
+
+#
+# Brand  Labels
+#
+BRAND:    Marca
+BRAND_TITLE:    Marcas
+BRAND_NEW_SUBTITLE:    Nueva Marca
+BRAND_EDIT_SUBTITLE:    Editar Maca
+BRAND_SHOW_SUBTITLE:    Detalle del Marca
+
+#
+# Type device  Labels
+#
+TYPE_DEVICE:    Tipo de dispositivo
+TYPE_DEVICE_TITLE:    Tipos de dispositivos
+TYPE_DEVICE_NEW_SUBTITLE:    Nuevo Tipo de Dispositivo
+TYPE_DEVICE_EDIT_SUBTITLE:    Editar Tipo de Dispositivo
+TYPE_DEVICE_SHOW_SUBTITLE:    Detalle del Tipo de Dispositivo
+
+#
+# Status device  Labels
+#
+STATUS_DEVICE:    Estado de dispositivo
+STATUS_DEVICE_TITLE:    Estados de dispositivos
+STATUS_DEVICE_NEW_SUBTITLE:    Nuevo Estado de Dispositivo
+STATUS_DEVICE_EDIT_SUBTITLE:    Editar Estado de Dispositivo
+STATUS_DEVICE_SHOW_SUBTITLE:    Detalle del Estado del Dispositivo
+
+
+#
+# Device  Labels
+#
+DEVICE:    Dispositivo
+DEVICE_TITLE:    Dispositivos
+DEVICE_NEW_SUBTITLE:    Nuevo Dispositivo
+DEVICE_EDIT_SUBTITLE:    Editar Dispositivo
+DEVICE_SHOW_SUBTITLE:    Detalle del Dispositivo
+DEVICE_SELECT: Ingrese el codigo del dispositivo...
+
+#
+# Device  Labels
+#
+STATION:    Estación
+STATION_TITLE:    Estaciones/Torres
+STATION_NEW_SUBTITLE:    Nuevo Estación
+STATION_EDIT_SUBTITLE:    Editar Estación
+STATION_SHOW_SUBTITLE:    Detalle de la Estación
+STATION_MAP: Mapa de las estaciones
+
+#
+# Device  Labels
+#
+NODE:    Nodo de red
+NODE_TITLE:    Nodos de red
+NODE_NEW_SUBTITLE:    Nuevo Nodo
+NODE_EDIT_SUBTITLE:    Editar Nodo
+NODE_SHOW_SUBTITLE:    Detalle del Nodo
+NODE_LINK:  Enlace al nodo
+NODE_MAP: Mapa de los nodos
+
+#
+# Type plan  Labels
+#
+TYPE_PLAN:    Tipo de Plan
+TYPE_PLAN_TITLE:    Tipos de Planes
+TYPE_PLAN_NEW_SUBTITLE:    Nuevo Tipo de Plan
+TYPE_PLAN_EDIT_SUBTITLE:    Editar Tipo de Plan
+TYPE_PLAN_SHOW_SUBTITLE:    Detalle del Tipo de Plan
+
+#
+# Plan  Labels
+#
+PLAN:    Plan
+PLAN_TITLE:    Planes
+PLAN_NEW_SUBTITLE:    Nuevo Plan
+PLAN_EDIT_SUBTITLE:    Editar Plan
+PLAN_SHOW_SUBTITLE:    Detalle del Plan
+
+#
+# Usuario  Labels
+#
+USER:    Usuario
+USER_TITLE:    Usuarios
+USER_NEW_SUBTITLE:    Nuevo Usuario
+USER_EDIT_SUBTITLE:    Editar Usuario
+USER_SHOW_SUBTITLE:    Detalle del Usuario
+
+#
+# Plan  Labels
+#
+CATEGORIA:    Categoria
+CATEGORIA_TITLE:    Categorias
+CATEGORIA_NEW_SUBTITLE:    Nueva Categoria
+CATEGORIA_EDIT_SUBTITLE:    Editar Categoria
+CATEGORIA_SHOW_SUBTITLE:    Detalle del Categoria
+
+#
+# Provincia  Labels
+#
+PROVINCIA:    Provincia
+PROVINCIA_TITLE:    Provincias
+PROVINCIA_NEW_SUBTITLE:    Nueva Provincia
+PROVINCIA_EDIT_SUBTITLE:    Editar Provincia
+PROVINCIA_SHOW_SUBTITLE:    Detalle de la Provincia
+
+#
+# Canton  Labels
+#
+CANTON:    Cantón
+CANTON_TITLE:    Cantones
+CANTON_NEW_SUBTITLE:    Nuevo Cantón
+CANTON_EDIT_SUBTITLE:    Editar Cantón
+CANTON_SHOW_SUBTITLE:    Detalle del Cantón
+
+#
+# Canton  Labels
+#
+SITIO:    Sitio
+SITIO_TITLE:    Sitios
+SITIO_NEW_SUBTITLE:    Nuevo Sitio
+SITIO_EDIT_SUBTITLE:    Editar Sitio
+SITIO_SHOW_SUBTITLE:    Detalle del Sitio
+
+#
+# ROL Labels
+#
+ROL_TITLE:    Roles
+ROL_NEW_SUBTITLE: Nuevo Rol
+ROL_EDIT_SUBTITLE: Editar Rol
+ROL_SHOW_SUBTITLE: Detalle del Rol
+
+
+#
+# Paises Labels
+#
+COUNTRY: Pais
+COUNTRY_TITLE:    Paises
+COUNTRY_NEW_SUBTITLE: Nueva Pais
+COUNTRY_EDIT_SUBTITLE: Editar Pais
+COUNTRY_SHOW_SUBTITLE: Detalle del Pais
+
+
+
+#
+# Alerts Plan: AP
+#
+GENERIC_ERROR: Se ha producido un error. Por favor inténtelo más tarde.
+SAVE_SUCCESS: Registro guardado exitosamente.
+UPDATE_SUCCESS: Registro actualizado exitosamente.
+DELETE_SUCCESS: Registro eliminado exitosamente.
+
+
+CLIENT_PLAN_NO_SELECTED_CLIENT: Seleccione el cliente
+CLIENT_PLAN_NO_SELECTED_PLAN: Seleccione el plan
+
+PAYMENT_SAVE_SUCCESS: El pago se ha sido guardado exitosamente.
+
+#
+# Check Messages: CM
+#
+DELETE_CONFIRMATION: ¿Está seguro que desea eliminar?
